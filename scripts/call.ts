@@ -10,7 +10,7 @@ async function deposit() {
     console.log(" wasmOracleAddressOnChain ", wasmOracleAddressOnChain);
 
     const price = await oracle.getPriceOCH();
-    console.log(" price ", ethers.formatUnits(price, 18));
+    console.log(" price ", ethers.formatUnits(price, 6));
 }
 
 deposit();
